@@ -17,6 +17,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         
         scanner.start { (beacons: [CLBeacon]) -> Void in
+            
             if let b = self.find(beacons, minorValue: self.RED_ID) {
                 self.red = self.crunchRGBValue(b.rssi)
             }
@@ -29,7 +30,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 self.blue = self.crunchRGBValue(b.rssi)
             }
             
-            println("red: \(self.red), green: \(self.green), blue: \(self.blue)")
             self.view.backgroundColor = UIColor(red: self.red/255, green: self.green/255, blue: self.blue/255, alpha: 1)
         }
     }
@@ -39,9 +39,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func crunchRGBValue(rssi: Int) -> CGFloat {
-        var positive = rssi * (-1)
-        var based = max(positive - 50, 0)
-        
+        var based = max(rssi + 100, 0)
         var stretched = min(based * 5, 255)
         
         return CGFloat(stretched)
