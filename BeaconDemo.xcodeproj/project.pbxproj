@@ -13,6 +13,7 @@
 		9954FA721AA7A47D00A3670B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9954FA711AA7A47D00A3670B /* Images.xcassets */; };
 		9954FA751AA7A47D00A3670B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9954FA731AA7A47D00A3670B /* LaunchScreen.xib */; };
 		9954FA811AA7A47D00A3670B /* BeaconDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9954FA801AA7A47D00A3670B /* BeaconDemoTests.swift */; };
+		9996A2DB1AA824B60046DC5B /* BeaconScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9996A2DA1AA824B60046DC5B /* BeaconScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9954FA7A1AA7A47D00A3670B /* BeaconDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9954FA7F1AA7A47D00A3670B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9954FA801AA7A47D00A3670B /* BeaconDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDemoTests.swift; sourceTree = "<group>"; };
+		9996A2DA1AA824B60046DC5B /* BeaconScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconScanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				9954FA711AA7A47D00A3670B /* Images.xcassets */,
 				9954FA731AA7A47D00A3670B /* LaunchScreen.xib */,
 				9954FA681AA7A47D00A3670B /* Supporting Files */,
+				9996A2DA1AA824B60046DC5B /* BeaconScanner.swift */,
 			);
 			path = BeaconDemo;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9954FA6D1AA7A47D00A3670B /* ViewController.swift in Sources */,
+				9996A2DB1AA824B60046DC5B /* BeaconScanner.swift in Sources */,
 				9954FA6B1AA7A47D00A3670B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				9954FA861AA7A47D00A3670B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9954FA871AA7A47D00A3670B /* Build configuration list for PBXNativeTarget "BeaconDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				9954FA891AA7A47D00A3670B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
